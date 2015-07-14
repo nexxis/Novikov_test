@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>2GIS</title>
+	<link rel="stylesheet" href="css/reset.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<!--[if lte IE 8]><style>.card {border: 1px solid #000;}</style><![endif]-->
+</head>
+<body>
+	<div class="cards-wrap">
+		<div id="cards" class="cards">	
+		</div>
+	</div>
+	<div class="map"></div>
+	
+	<script id="entry-template" type="text/x-handlebars-template">
+		{{#each cards}}
+			<div class="card {{type}}">
+				<div class="number">{{counter @index}}</div>
+			</div>
+		{{/each}}
+	</script>
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/handlebars.js"></script>
+	<script type="text/javascript" src="js/cards.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+</body>
+</html>
